@@ -4,12 +4,12 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 10.0f;
 
-    private Rigidbody rigidbody;
+    private Rigidbody _rigidbody;
 
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
-        Debug.Assert(rigidbody != null);
+        _rigidbody = GetComponent<Rigidbody>();
+        Debug.Assert(_rigidbody != null);
     }
 
     void Update()
@@ -21,13 +21,13 @@ public class PlayerController : MonoBehaviour
         // 방향에 대한 값을 확인 (-1.0 ~ 0.0 ~ 1.0)
         // true false 가 아니라 숫자 값인 것은 조이스틱은 변화량으로 오므로
         float inputX = Input.GetAxis("Horizontal");
-        float speedY = rigidbody.velocity.y; // 원래 떨어지는 속도(중력 가속도와 중량에 의한 떨어지는 속도) 유지를 위해
+        float speedY = _rigidbody.velocity.y; // 원래 떨어지는 속도(중력 가속도와 중량에 의한 떨어지는 속도) 유지를 위해
         float inputZ = Input.GetAxis("Vertical");
 
         // 힘으로 주면 관성 작용 가능
         // rigidbody.AddForce(inputX * speed, 0, inputZ * speed);
 
         // 그냥 바로 변경이 되고 싶으면 속도를 사용해야함.
-        rigidbody.velocity = speed * new Vector3(inputX, speedY, inputZ);
+        _rigidbody.velocity = speed * new Vector3(inputX, speedY, inputZ);
     }
 }

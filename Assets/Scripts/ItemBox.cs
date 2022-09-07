@@ -1,20 +1,26 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemBoxController : MonoBehaviour
+public class ItemBox : MonoBehaviour
 {
+    public bool IsDefeated { get; private set; }
+
     void OnTriggerEnter(Collider other)
     {
         // IsTrigger 가 체크되어있는 collider 와 충돌을 "시작했을 때"
-        
-        
-        if (!other.CompareTag("EndPoint")) return;
-        
-        Debug.Log("EndPoint 와 부딪침");
-        other.gameObject.SetActive(false);
-        gameObject.SetActive(false);
+
+
+        if (other.CompareTag("EndPoint"))
+        {
+            other.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+
+            IsDefeated = true;
+        }
+    }
+
+    private void OnEnable()
+    {
+        IsDefeated = false;
     }
 
     private void OnTriggerExit(Collider other)
