@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7472ddba-49f2-4571-a549-afc2b7a2dd31" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPracticeWithRetro0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPracticeWithRetro0/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EndPoint.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EndPoint.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ItemBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ItemBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SkovanGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SkovanGameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +10,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemBoxController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -75,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662513687186</updated>
       <workItem from="1662513865475" duration="1556000" />
-      <workItem from="1662516165970" duration="7182000" />
+      <workItem from="1662516165970" duration="9783000" />
     </task>
     <servers />
   </component>
